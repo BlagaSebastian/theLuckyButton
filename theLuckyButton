@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The lucky button</title>
+        <title>Center align button</title>
+        <style>
+            body {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>The lucky button</h1>
+        <h4>Enter the number of buttons you would like the lucky one to hide into.</h2>
+        <label for="quantity"></label>
+        <input type="text">
+        <input type="button" value="Submit" id="quantity" onclick="setValue()">
+        <p id = "luckResult"></p>
+        <div id="buttonsList"></div>
+        <br>
+        <button onClick = "window.location.reload();" style="height: 50px; width: 60px">Restart</button>
+        <script src="main.js"></script>
+    </body>
+</html>
