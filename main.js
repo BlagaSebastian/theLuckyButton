@@ -15,12 +15,12 @@ function generateButtons() {
         let button = document.createElement("button");
         button.innerHTML = i;
         button.setAttribute("id", i);
-        button.onclick = function() {onClick(i)};
+        button.onclick = function() {luckCheck(i)};
         document.getElementById("buttonsList").appendChild(button);
     }
 }
 
-function onClick(id) {
+function luckCheck(id) {
     if (id == randomNr) {
         luckResult.innerHTML = "Winner!";
     } else {
